@@ -23,7 +23,7 @@ namespace Sorting.Presenters
         
        sortingmethod.inputstring = newtextbox1;
 
-       sortmethodview.textres1 = String.Join(" ",sortingmethod.bubsort());
+       sortmethodview.textres1 = String.Join(" ",sortingmethod.SortingMethod());
       
 
 

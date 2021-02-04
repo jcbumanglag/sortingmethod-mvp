@@ -34,18 +34,23 @@ namespace Sorting
         {
             get
             {
+                var list = new List<string>();
+                foreach(var item in label1.Items)
+                {
+                    list.Add(item.ToString());
+                }
                 return label1.Text;
             }
             set
             {
-                label1.Text = "Sorted: "+value;
+                label1.Items.Add("Sorted: "+ value);
             }
         }
 
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            textBox2.Text = "Bubble Sort";
+            textBox2.Text = "Quick Sort";
         }
          
   
@@ -65,6 +70,13 @@ namespace Sorting
             }
        
         }
+
+    
+
+   
+
+
+
 
 
     }

@@ -52,11 +52,15 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="MergeSort.cs" />
     <Compile Include="Models\sortmethod.cs" />
     <Compile Include="Presenters\sortmethodpresenter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\bubblesort.cs" />
+    <Compile Include="QuickSort.cs" />
+    <Compile Include="SortedList.cs" />
+    <Compile Include="Sortstrategy.cs" />
     <Compile Include="Views\Isortmethod.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

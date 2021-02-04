@@ -9,21 +9,18 @@ namespace Sorting.Models
     {
         public char[] inputstring { get; set; }
         
-        public char[] bubsort()
+        public char[] SortingMethod()
         {
-            for (int i = 0; i < inputstring.Length - 1; i++)
-            {
-                for (int k = 0; k < inputstring.Length - i - 1; k++)
-                {
-                    if (inputstring[k] > inputstring[k + 1])
-                    {
-                        char temp = inputstring[k];
-                        inputstring[k] = inputstring[k + 1];
-                        inputstring[k + 1] = temp;
-                    }
-                }
+            SortedList records = new SortedList();
+            records.Add(inputstring);
 
-            }
+            records.SetSortStrategy(new QuickSort());
+            records.Sort();
+
+            records.SetSortStrategy(new MergeSort());
+
+            records.Sort();
+            
             return inputstring;
         }
        
